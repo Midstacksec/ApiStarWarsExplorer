@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- fundo com estrelas e cometa -->
+  <div id="galaxy"></div>
+  <div id="cometa"></div>
+
+  <!-- cabeçalho principal -->
+  <header>
+    <h1>Star Wars Explorer</h1>
+    <p>Explore o universo de uma Galáxia muito, muito distante</p>
+  </header>
+
+  <!-- botões de navegação por categoria -->
+  <nav>
+    <button onclick="buscar('personagens')">Personagens</button>
+    <button onclick="buscar('planetas')">Planetas</button>
+    <button onclick="buscar('naves')">Naves</button>
+    <button onclick="buscar('veiculos')">Veículos</button>
+    <button onclick="buscar('especies')">Espécies</button>
+    <button onclick="buscar('filmes')">Filmes</button>
+  </nav>
+
+  <!-- campo de busca -->
+  <div id="busca-wrapper">
+    <input type="text" id="busca" placeholder="Buscar no universo...">
+  </div>
+
+  <!-- carregamento -->
+  <div id="loading">
+    <div class="spinner"></div>
+    <p>Conectando à Força...</p>
+  </div>
+
+  <!-- aqui os cards aparecem -->
+  <div id="cards"></div>
+
+  <!-- Interface com detalhes -->
+  <div id="modal-overlay">
+    <div id="modal">
+      <button id="fechar-modal">✕</button>
+      <div id="modal-conteudo"></div>
+    </div>
+  </div>
+
+  <!-- rodapé com meu nome e linkedin -->
+  <footer>
+    <p>Desenvolvido por <span>Fernanda Duarte</span></p>
+    <a href="https://www.linkedin.com/in/fernanda-amorim-duarte-8883903a7/" target="_blank">LinkedIn</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

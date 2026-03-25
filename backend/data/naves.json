@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nome": "Millennium Falcon",
+    "imagem": "http://localhost:3000/img/falcon.jpg",
+    "modelo": "YT-1300f light freighter",
+    "fabricante": "Corellian Engineering Corporation",
+    "comprimento": "34.37 metros",
+    "tripulacao": "2",
+    "passageiros": "6",
+    "velocidade": "1050 km/h",
+    "historia": "O Millennium Falcon é provavelmente a nave mais famosa da galáxia. Pertencente a Han Solo e Chewbacca, essa cargueira modificada fez o Kessel Run em menos de 12 parsecs. Apesar da aparência desgastada, esconde modificações ilegais que a tornam uma das naves mais rápidas do espaço."
+  },
+  {
+    "id": 2,
+    "nome": "X-Wing",
+    "imagem": "http://localhost:3000/img/xwing.jpg",
+    "modelo": "T-65B X-wing starfighter",
+    "fabricante": "Incom Corporation",
+    "comprimento": "12.5 metros",
+    "tripulacao": "1",
+    "passageiros": "0",
+    "velocidade": "1050 km/h",
+    "historia": "O X-Wing é o caça estelar símbolo da Aliança Rebelde. Com seus quatro motores que se abrem em X durante o combate, tornou-se ícone da resistência contra o Império. Foi pilotando um X-Wing que Luke Skywalker destruiu a primeira Estrela da Morte com um único disparo de torpedo de prótons."
+  },
+  {
+    "id": 3,
+    "nome": "Star Destroyer",
+    "imagem": "http://localhost:3000/img/stardestroyer.jpg",
+    "modelo": "Imperial I-class Star Destroyer",
+    "fabricante": "Kuat Drive Yards",
+    "comprimento": "1.600 metros",
+    "tripulacao": "37.085",
+    "passageiros": "9.700",
+    "velocidade": "975 km/h",
+    "historia": "O Destroyer Estelar Imperial é o símbolo do poder militar do Império Galático. Com mais de 1,6 km de comprimento, carrega esquadrões de TIE Fighters e tropas de assalto. Sua silhueta triangular cortando o espaço tornou-se sinônimo de medo e opressão em toda a galáxia."
+  },
+  {
+    "id": 4,
+    "nome": "Estrela da Morte",
+    "imagem": "http://localhost:3000/img/deathstar.jpg",
+    "modelo": "DS-1 Orbital Battle Station",
+    "fabricante": "Império Galático",
+    "comprimento": "120 km de diâmetro",
+    "tripulacao": "1.186.295",
+    "passageiros": "843.342",
+    "velocidade": "N/A",
+    "historia": "A Estrela da Morte foi a arma definitiva do Império — uma estação de batalha do tamanho de uma lua capaz de destruir planetas inteiros. Destruída pelos Rebeldes na Batalha de Yavin, uma segunda versão maior foi construída e destruída na Batalha de Endor pelo próprio Darth Vader."
+  },
+  {
+    "id": 5,
+    "nome": "TIE Fighter",
+    "imagem": "http://localhost:3000/img/tiefighter.jpg",
+    "modelo": "TIE/LN starfighter",
+    "fabricante": "Sienar Fleet Systems",
+    "comprimento": "6.4 metros",
+    "tripulacao": "1",
+    "passageiros": "0",
+    "velocidade": "1.200 km/h",
+    "historia": "O TIE Fighter é o caça padrão do Império Galático, reconhecível pelo som uivante característico. Rápido e ágil, mas sem escudos nem hiperimpulsor, era descartável pelo Império que os usava em grandes ondas. Pilotados por stormtroopers treinados, eram a primeira linha de defesa imperial."
+  },
+  {
+    "id": 6,
+    "nome": "Slave I",
+    "imagem": "http://localhost:3000/img/slave1.jpg",
+    "modelo": "Firespray-31-class patrol craft",
+    "fabricante": "Kuat Systems Engineering",
+    "comprimento": "21.5 metros",
+    "tripulacao": "1",
+    "passageiros": "6",
+    "velocidade": "1.000 km/h",
+    "historia": "A Slave I foi a nave do temido caçador de recompensas Jango Fett e depois de seu filho Boba Fett. Com design único e arsenal poderoso, carregava torpedos sônicos, lasers e armadilhas. Foi nessa nave que Boba capturou Han Solo congelado em carbonita para entregá-lo a Jabba the Hutt."
+  }
+]

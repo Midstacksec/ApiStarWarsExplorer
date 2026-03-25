@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nome": "Tatooine",
+    "imagem": "http://localhost:3000/img/tatooine.jpg",
+    "clima": "Árido",
+    "terreno": "Deserto",
+    "populacao": "200.000",
+    "diametro": "10.465 km",
+    "periodo_orbital": "304 dias",
+    "periodo_rotacao": "23 horas",
+    "historia": "Tatooine é um planeta desértico de dois sóis localizado nas Bordas Externas da galáxia. Lar de Luke Skywalker e seu pai Anakin antes dele, o planeta é dominado pelos Hutts e infestado de Tusken Raiders. Suas dunas escaldantes escondem uma história profunda ligada ao destino da galáxia."
+  },
+  {
+    "id": 2,
+    "nome": "Alderaan",
+    "imagem": "http://localhost:3000/img/alderaan.jpg",
+    "clima": "Temperado",
+    "terreno": "Montanhas e florestas",
+    "populacao": "2.000.000.000",
+    "diametro": "12.500 km",
+    "periodo_orbital": "364 dias",
+    "periodo_rotacao": "24 horas",
+    "historia": "Alderaan era um dos planetas mais belos e pacíficos da galáxia, lar da Princesa Leia e do senador Bail Organa. Conhecido por sua cultura refinada e diplomacia, foi destruído pela Estrela da Morte como demonstração de poder do Império, deixando apenas escombros no espaço."
+  },
+  {
+    "id": 3,
+    "nome": "Hoth",
+    "imagem": "http://localhost:3000/img/hoth.jpg",
+    "clima": "Congelante",
+    "terreno": "Tundra e geleiras",
+    "populacao": "Desabitado",
+    "diametro": "7.200 km",
+    "periodo_orbital": "549 dias",
+    "periodo_rotacao": "23 horas",
+    "historia": "Hoth é um planeta de gelo remoto que serviu de base secreta para a Aliança Rebelde. Foi nesse mundo congelante que ocorreu a famosa Batalha de Hoth, quando o Império descobriu e atacou a Base Echo. Os Rebeldes conseguiram escapar, mas sofreram grandes baixas."
+  },
+  {
+    "id": 4,
+    "nome": "Dagobah",
+    "imagem": "http://localhost:3000/img/dagobah.jpg",
+    "clima": "Murky",
+    "terreno": "Pântanos e florestas",
+    "populacao": "Desabitado",
+    "diametro": "8.900 km",
+    "periodo_orbital": "341 dias",
+    "periodo_rotacao": "23 horas",
+    "historia": "Dagobah é um planeta pantanoso e misterioso onde Yoda se exilou após a queda da República. Rico na Força, o planeta foi escolhido pelo Mestre Jedi por sua densa vida selvagem que mascarava sua presença dos olhos do Império. Foi lá que Luke recebeu seu treinamento Jedi."
+  },
+  {
+    "id": 5,
+    "nome": "Coruscant",
+    "imagem": "http://localhost:3000/img/coruscant.jpg",
+    "clima": "Temperado",
+    "terreno": "Cidade planetária",
+    "populacao": "1 trilhão",
+    "diametro": "12.240 km",
+    "periodo_orbital": "368 dias",
+    "periodo_rotacao": "24 horas",
+    "historia": "Coruscant é a capital da galáxia, um planeta inteiramente coberto por uma metrópole que se estende do horizonte ao horizonte. Sede do Senado Galático e do Templo Jedi, foi o centro do poder por milhares de anos. Sob o domínio do Império tornou-se um símbolo de controle e opressão."
+  },
+  {
+    "id": 6,
+    "nome": "Naboo",
+    "imagem": "http://localhost:3000/img/naboo.jpg",
+    "clima": "Temperado",
+    "terreno": "Planícies e pântanos",
+    "populacao": "4.500.000.000",
+    "diametro": "11.899 km",
+    "periodo_orbital": "312 dias",
+    "periodo_rotacao": "26 horas",
+    "historia": "Naboo é um planeta de paisagens deslumbrantes, lar da Rainha Amidala e do senador Palpatine. Dividido entre os humanos Naboo que vivem nas cidades e os Gungans que habitam o mundo subaquático. Foi palco da invasão da Federação do Comércio que desencadeou os eventos da Ameaça Fantasma."
+  },
+  {
+    "id": 7,
+    "nome": "Mustafar",
+    "imagem": "http://localhost:3000/img/mustafar.jpg",
+    "clima": "Escaldante",
+    "terreno": "Vulcões e lava",
+    "populacao": "20.000",
+    "diametro": "4.200 km",
+    "periodo_orbital": "412 dias",
+    "periodo_rotacao": "36 horas",
+    "historia": "Mustafar é um planeta vulcânico de rios de lava e céu vermelho sangue. Foi nesse inferno que ocorreu o confronto mais devastador da saga — Obi-Wan Kenobi contra Anakin Skywalker. Anakin perdeu os membros e foi consumido pelas chamas, renascendo como Darth Vader dentro de uma armadura."
+  },
+  {
+    "id": 8,
+    "nome": "Endor",
+    "imagem": "http://localhost:3000/img/endor.jpg",
+    "clima": "Temperado",
+    "terreno": "Florestas",
+    "populacao": "30.000.000",
+    "diametro": "4.900 km",
+    "periodo_orbital": "402 dias",
+    "periodo_rotacao": "18 horas",
+    "historia": "Endor é uma lua florestal coberta por árvores gigantescas, lar dos Ewoks. Foi aqui que a Aliança Rebelde travou a batalha decisiva contra o Império, destruindo o gerador de escudo da segunda Estrela da Morte. Os Ewoks, apesar de primitivos, foram fundamentais para a vitória Rebelde."
+  }
+]

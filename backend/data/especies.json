@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "nome": "Humano",
+    "imagem": "http://localhost:3000/img/humano.jpg",
+    "classificacao": "Mamífero",
+    "linguagem": "Galáctico Básico",
+    "altura_media": "1.80 metros",
+    "expectativa_vida": "120 anos",
+    "planeta_origem": "Coruscant",
+    "historia": "Os humanos são a espécie mais numerosa e influente da galáxia. Espalhados por incontáveis sistemas estelares, dominam a política, o comércio e o poder militar. Tanto o lado luminoso quanto o lado sombrio da Força encontraram em humanos seus maiores campeões — de Yoda a Palpatine."
+  },
+  {
+    "id": 2,
+    "nome": "Wookiee",
+    "imagem": "http://localhost:3000/img/wookiee.jpg",
+    "classificacao": "Mamífero",
+    "linguagem": "Shyriiwook",
+    "altura_media": "2.20 metros",
+    "expectativa_vida": "400 anos",
+    "planeta_origem": "Kashyyyk",
+    "historia": "Os Wookiees são seres imponentes cobertos de pelo de Kashyyyk. Conhecidos por sua força descomunal e lealdade inabalável, possuem cultura rica e são exímios caçadores e mecânicos. Chewbacca é o Wookiee mais famoso da galáxia, parceiro inseparável de Han Solo."
+  },
+  {
+    "id": 3,
+    "nome": "Jedi",
+    "imagem": "http://localhost:3000/img/jedi.jpg",
+    "classificacao": "Ordem",
+    "linguagem": "Galáctico Básico",
+    "altura_media": "Variada",
+    "expectativa_vida": "Variada",
+    "planeta_origem": "Coruscant",
+    "historia": "Os Jedis não são uma espécie mas uma ordem de guardiões da paz que usam a Força para proteger a galáxia. Treinados desde a infância no Templo Jedi em Coruscant, dedicam suas vidas ao lado luminoso da Força. Quase extintos após a Ordem 66, ressurgiram através de Luke Skywalker."
+  },
+  {
+    "id": 4,
+    "nome": "Ewok",
+    "imagem": "http://localhost:3000/img/ewok.jpg",
+    "classificacao": "Mamífero",
+    "linguagem": "Ewokês",
+    "altura_media": "1 metro",
+    "expectativa_vida": "N/A",
+    "planeta_origem": "Lua de Endor",
+    "historia": "Os Ewoks são pequenos seres peludos que habitam as florestas da lua de Endor. Apesar de primitivos, com armas de madeira e pedra, foram fundamentais na batalha contra o Império. Sua coragem e conhecimento do terreno ajudaram os Rebeldes a destruir o gerador de escudo da segunda Estrela da Morte."
+  },
+  {
+    "id": 5,
+    "nome": "Hutt",
+    "imagem": "http://localhost:3000/img/hutt.jpg",
+    "classificacao": "Réptil",
+    "linguagem": "Huttese",
+    "altura_media": "1.75 metros (comprimento 3.9m)",
+    "expectativa_vida": "1.000 anos",
+    "planeta_origem": "Nal Hutta",
+    "historia": "Os Hutts são seres volumosos e de vida longa que controlam o crime organizado em grande parte da galáxia. Jabba the Hutt era o mais poderoso deles, operando um império criminoso em Tatooine. Imunes à influência da Força, são negociadores astutos e absolutamente impiedosos."
+  },
+  {
+    "id": 6,
+    "nome": "jawas",
+    "imagem": "http://localhost:3000/img/jawa.jpg",
+    "classificacao": "Mamífero",
+    "linguagem": "Jawaês",
+    "altura_media": "1 metro",
+    "expectativa_vida": "80 anos",
+    "planeta_origem": "Tatooine",
+    "historia": "Os Jawas são pequenos seres encapuzados que vagam pelo deserto de Tatooine em seus enormes Sandcrawlers coletando sucata e droides abandonados para revender. Seus olhos brilham em amarelo sob os capuzes escuros. Foi de um grupo de Jawas que Luke Skywalker comprou R2-D2 e C-3PO, mudando o destino da galáxia."
+  },
+  {
+    "id": 7,
+    "nome": "zabraks",
+    "imagem": "http://localhost:3000/img/zabrak.jpg",
+    "classificacao": "Mamífero",
+    "linguagem": "Zabraki",
+    "altura_media": "1.80 metros",
+    "expectativa_vida": "100 anos",
+    "planeta_origem": "Iridonia",
+    "historia": "Os Zabraks são reconhecíveis pelos chifres na cabeça e tatuagens faciais rituais que representam sua jornada pessoal. Conhecidos por sua resistência física e mental extraordinárias. O mais famoso dos Zabraks é Darth Maul, aprendiz do Imperador Palpatine, cujas habilidades com o sabre de luz duplo o tornaram um dos duelistas mais temidos da galáxia."
+  }
+]

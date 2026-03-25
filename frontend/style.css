@@ -1,0 +1,572 @@
+/* variáveis de cores que eu criei para o projeto */
+:root {
+  --roxo-escuro: #1a0a2e;
+  --roxo-medio: #2d1b4e;
+  --roxo-card: #261040;
+  --roxo-borda: #6b2fa0;
+  --roxo-brilho: #9b4dd4;
+  --texto: #e0d0f0;
+  --texto-fraco: #8a7a9a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050008;
+  color: var(--texto);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* fundo fixo com as estrelas */
+#galaxy {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* cada estrela é um span criado pelo JS */
+.estrela {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: piscar var(--dur) ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes piscar {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: var(--brilho);
+  }
+}
+
+/* cometa que atravessa a tela */
+#cometa {
+  position: fixed;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, white, transparent);
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  animation: voarCometa 8s linear infinite;
+}
+
+@keyframes voarCometa {
+  0% {
+    top: 10%;
+    left: -150px;
+    opacity: 0;
+    transform: rotate(-20deg);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 40%;
+    left: 110%;
+    opacity: 0;
+    transform: rotate(-20deg);
+  }
+}
+
+/* tudo que nao é galaxia fica na frente */
+header,
+nav,
+#busca-wrapper,
+#loading,
+#cards,
+#modal-overlay,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: #fff;
+  text-shadow:
+    0 0 20px var(--roxo-brilho),
+    0 0 60px rgba(155, 77, 212, 0.4);
+  animation: pulsar 3s ease-in-out infinite;
+}
+
+@keyframes pulsar {
+
+  0%,
+  100% {
+    text-shadow: 0 0 20px var(--roxo-brilho), 0 0 60px rgba(155, 77, 212, 0.4);
+  }
+
+  50% {
+    text-shadow: 0 0 40px var(--roxo-brilho), 0 0 100px rgba(155, 77, 212, 0.7);
+  }
+}
+
+header p {
+  color: var(--texto-fraco);
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+nav button {
+  background: var(--roxo-medio);
+  border: 1px solid var(--roxo-borda);
+  color: var(--texto);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+nav button:hover {
+  background: var(--roxo-borda);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(107, 47, 160, 0.6);
+  transform: translateY(-2px);
+}
+
+nav button.ativo {
+  background: var(--roxo-brilho);
+  border-color: var(--roxo-brilho);
+  color: #fff;
+  box-shadow: 0 0 30px rgba(155, 77, 212, 0.5);
+}
+
+#busca-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px 30px;
+}
+
+#busca {
+  width: min(500px, 90%);
+  background: var(--roxo-escuro);
+  border: 1px solid var(--roxo-borda);
+  border-bottom: 2px solid var(--roxo-brilho);
+  color: var(--texto);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  padding: 12px 18px;
+  outline: none;
+  transition: all 0.25s;
+}
+
+#busca:focus {
+  border-color: var(--roxo-brilho);
+  box-shadow: 0 0 20px rgba(155, 77, 212, 0.25);
+}
+
+#busca::placeholder {
+  color: var(--texto-fraco);
+  font-style: italic;
+}
+
+#loading {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 60px;
+}
+
+#loading.visivel {
+  display: flex;
+}
+
+#loading p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  color: var(--roxo-brilho);
+  animation: piscar-texto 1.5s ease-in-out infinite;
+}
+
+@keyframes piscar-texto {
+
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--roxo-escuro);
+  border-top: 3px solid var(--roxo-brilho);
+  border-radius: 50%;
+  animation: girar 0.9s linear infinite;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* grade que organiza os cards */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 10px 40px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* efeito 3D */
+.card-wrapper {
+  height: 340px;
+  perspective: 1000px;
+  cursor: pointer;
+  animation: aparecer 0.4s ease both;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.card-wrapper:hover .card {
+  transform: rotateY(180deg);
+}
+
+/* frente e verso do card */
+.card-frente,
+.card-verso {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  background: var(--roxo-card);
+  border: 1px solid var(--roxo-borda);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  animation: bordaPulsar 3s ease-in-out infinite;
+}
+
+/* borda roxa */
+@keyframes bordaPulsar {
+
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(107, 47, 160, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 24px rgba(155, 77, 212, 0.5);
+  }
+}
+
+/* verso fica escondido até virar */
+.card-verso {
+  transform: rotateY(180deg);
+  justify-content: center;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+/* foto do card */
+.card-foto {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 12px;
+  background: var(--roxo-escuro);
+  filter: saturate(0.85) brightness(0.9);
+  transition: filter 0.3s;
+}
+
+.card-wrapper:hover .card-foto {
+  filter: saturate(1.1) brightness(1);
+}
+
+/* glitch no nome ao passar o mouse */
+.card-nome {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  color: #fff;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+.card-wrapper:hover .card-nome {
+  animation: glitch 0.4s ease infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    color: #fff;
+  }
+
+  20% {
+    transform: translate(-2px, 1px);
+    color: var(--roxo-brilho);
+  }
+
+  40% {
+    transform: translate(2px, -1px);
+    color: #fff;
+  }
+
+  60% {
+    transform: translate(-1px, 2px);
+    color: var(--roxo-brilho);
+  }
+
+  80% {
+    transform: translate(1px, -2px);
+    color: #fff;
+  }
+
+  100% {
+    transform: translate(0);
+    color: #fff;
+  }
+}
+
+.card-verso p {
+  font-size: 0.85rem;
+  color: var(--texto-fraco);
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(107, 47, 160, 0.2);
+  padding-bottom: 6px;
+}
+
+.card-verso p span {
+  color: var(--texto);
+}
+
+.card-verso h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem;
+  color: var(--roxo-brilho);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* cards de filmes tem altura maior por causa do poster vertical */
+#cards.filmes .card-wrapper {
+  height: 480px;
+}
+
+#cards.filmes .card-foto {
+  height: 340px;
+  object-fit: contain;
+  background: #050008;
+}
+
+/* modal de detalhes */
+#modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 0, 8, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+#modal-overlay.aberto {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#modal {
+  background: var(--roxo-escuro);
+  border: 1px solid var(--roxo-brilho);
+  box-shadow: 0 0 60px rgba(107, 47, 160, 0.5);
+  width: min(600px, 92vw);
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 36px;
+  position: relative;
+  animation: modalEntrar 0.3s ease;
+}
+
+@keyframes modalEntrar {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#fechar-modal {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--texto-fraco);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+#fechar-modal:hover {
+  color: var(--roxo-brilho);
+}
+
+#modal-conteudo h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px var(--roxo-brilho);
+  letter-spacing: 2px;
+}
+
+#modal-conteudo img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 1px solid var(--roxo-borda);
+}
+
+#modal-conteudo p {
+  font-size: 1rem;
+  color: var(--texto);
+  line-height: 1.8;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(107, 47, 160, 0.2);
+  padding-bottom: 8px;
+}
+
+#modal-conteudo p strong {
+  color: var(--roxo-brilho);
+  font-weight: 600;
+}
+
+#modal-conteudo .historia {
+  font-style: italic;
+  color: var(--texto-fraco);
+  line-height: 1.9;
+  border: none;
+  margin-top: 16px;
+  padding: 16px;
+  background: rgba(155, 77, 212, 0.05);
+  border-left: 2px solid var(--roxo-brilho);
+}
+
+/* rodapé com nome e linkedin */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid rgba(107, 47, 160, 0.3);
+  margin-top: 40px;
+}
+
+footer p {
+  color: var(--texto-fraco);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+footer p span {
+  color: var(--roxo-brilho);
+  font-family: 'Orbitron', sans-serif;
+}
+
+footer a {
+  color: var(--texto-fraco);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  border: 1px solid var(--roxo-borda);
+  padding: 8px 20px;
+  transition: all 0.25s;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+footer a:hover {
+  background: var(--roxo-brilho);
+  border-color: var(--roxo-brilho);
+  color: #fff;
+}
+
+/* scroll roxa */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050008;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--roxo-borda);
+}

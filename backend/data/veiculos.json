@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nome": "AT-AT",
+    "imagem": "http://localhost:3000/img/atat.jpg",
+    "modelo": "All Terrain Armored Transport",
+    "fabricante": "Kuat Drive Yards",
+    "comprimento": "20 metros",
+    "tripulacao": "5",
+    "passageiros": "40 tropas",
+    "velocidade": "60 km/h",
+    "historia": "O AT-AT é o veículo de combate mais imponente do Império Galático. Com quatro pernas mecânicas e blindagem quase impenetrável, foi usado na devastadora Batalha de Hoth para destruir a Base Echo dos Rebeldes. Sua única fraqueza era o pescoço fino, explorado pelos pilotos de Snowspeeders."
+  },
+  {
+    "id": 2,
+    "nome": "AT-ST",
+    "imagem": "http://localhost:3000/img/atst.jpg",
+    "modelo": "All Terrain Scout Transport",
+    "fabricante": "Kuat Drive Yards",
+    "comprimento": "8.6 metros",
+    "tripulacao": "2",
+    "passageiros": "0",
+    "velocidade": "90 km/h",
+    "historia": "O AT-ST, conhecido como Chicken Walker pelos Rebeldes, é um veículo de reconhecimento bípede do Império. Mais ágil que o AT-AT mas menos blindado, foi amplamente usado na Batalha de Endor. Ironicamente, foi derrubado pelos Ewoks usando técnicas primitivas contra a tecnologia imperial."
+  },
+  {
+    "id": 3,
+    "nome": "Snowspeeder",
+    "imagem": "http://localhost:3000/img/snowspeeder.jpg",
+    "modelo": "T-47 airspeeder",
+    "fabricante": "Incom Corporation",
+    "comprimento": "5.3 metros",
+    "tripulacao": "2",
+    "passageiros": "0",
+    "velocidade": "1.100 km/h",
+    "historia": "O Snowspeeder é um aerodeslizador adaptado pelos Rebeldes para operar no clima congelante de Hoth. Apesar de pequeno, foi com essa nave que os Rebeldes criaram a tática de enredar os pés dos AT-ATs com cabos de reboque, derrubando os gigantes imperiais durante a batalha."
+  },
+  {
+    "id": 4,
+    "nome": "Sand Crawler",
+    "imagem": "http://localhost:3000/img/sandcrawler.jpg",
+    "modelo": "Sandcrawler",
+    "fabricante": "Corellia Mining Corporation",
+    "comprimento": "36.8 metros",
+    "tripulacao": "300 Jawas",
+    "passageiros": "N/A",
+    "velocidade": "30 km/h",
+    "historia": "O Sandcrawler é o lar móvel dos Jawas em Tatooine. Essas enormes máquinas enferrujadas percorrem o deserto coletando sucata e droides para vender. Foi de um Sandcrawler que Luke Skywalker comprou R2-D2 e C-3PO, evento que mudou o destino da galáxia para sempre."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nome": "Uma Nova Esperança",
+    "imagem": "http://localhost:3000/img/ep4.jpg",
+    "episodio": "IV",
+    "diretor": "George Lucas",
+    "produtor": "Gary Kurtz",
+    "lancamento": "1977",
+    "historia": "O início de tudo. Luke Skywalker, um jovem fazendeiro de Tatooine, descobre seu destino ao se juntar à Princesa Leia, Han Solo e Obi-Wan Kenobi para salvar a galáxia do Império. O clímax épico — o ataque à Estrela da Morte — definiu o cinema de aventura para sempre."
+  },
+  {
+    "id": 2,
+    "nome": "O Império Contra-Ataca",
+    "imagem": "http://localhost:3000/img/ep5.jpg",
+    "episodio": "V",
+    "diretor": "Irvin Kershner",
+    "produtor": "Gary Kurtz",
+    "lancamento": "1980",
+    "historia": "Considerado o melhor filme da saga. O Império destrói a base Rebelde em Hoth. Luke treina com Yoda em Dagobah enquanto Han e Leia fogem em Cloud City. O confronto entre Luke e Vader revela a verdade mais chocante da saga — e uma das frases mais famosas do cinema."
+  },
+  {
+    "id": 3,
+    "nome": "O Retorno de Jedi",
+    "imagem": "http://localhost:3000/img/ep6.jpg",
+    "episodio": "VI",
+    "diretor": "Richard Marquand",
+    "produtor": "Howard Kazanjian",
+    "lancamento": "1983",
+    "historia": "A conclusão da trilogia original. Luke enfrenta Darth Vader e o Imperador enquanto os Rebeldes atacam a segunda Estrela da Morte. O sacrifício de Vader redimindo seu filho Luke é o coração emocional de toda a saga, cumprindo a profecia do Escolhido."
+  },
+  {
+    "id": 4,
+    "nome": "A Ameaça Fantasma",
+    "imagem": "http://localhost:3000/img/ep1.jpg",
+    "episodio": "I",
+    "diretor": "George Lucas",
+    "produtor": "Rick McCallum",
+    "lancamento": "1999",
+    "historia": "A origem de tudo. Um jovem Anakin Skywalker é descoberto em Tatooine pelo Jedi Qui-Gon Jinn. A invasão de Naboo pela Federação do Comércio revela as primeiras sombras do que se tornaria o Império. O duelo final com Darth Maul é um dos combates mais aclamados da saga."
+  },
+  {
+    "id": 5,
+    "nome": "Ataque dos Clones",
+    "imagem": "http://localhost:3000/img/ep2.jpg",
+    "episodio": "II",
+    "diretor": "George Lucas",
+    "produtor": "Rick McCallum",
+    "lancamento": "2002",
+    "historia": "Anakin, agora Padawan de Obi-Wan, começa a cair no lado sombrio ao perder sua mãe. Sua proibida história de amor com Padmé Amidala começa enquanto a galáxia mergulha na Guerra dos Clones. As sementes da queda de Anakin e da ascensão do Império são plantadas aqui."
+  },
+  {
+    "id": 6,
+    "nome": "A Vingança dos Sith",
+    "imagem": "http://localhost:3000/img/ep3.jpg",
+    "episodio": "III",
+    "diretor": "George Lucas",
+    "produtor": "Rick McCallum",
+    "lancamento": "2005",
+    "historia": "O mais sombrio de todos. Anakin Skywalker cai completamente para o lado sombrio tornando-se Darth Vader. A Ordem 66 extermina quase todos os Jedis. O confronto épico entre Obi-Wan e Anakin em Mustafar lacra o destino de Vader. A galáxia mergulha na escuridão do Império."
+  }
+]

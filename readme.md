@@ -4,8 +4,8 @@ Se você ama Star Wars tanto quanto eu, venha explorar o universo da saga comigo
 
 ## Preview
 
-![Personagens](assets/Star%20wars%20explorer.jpg)
-![Planetas](assets/planets.jpg)
+![Personagens](assets/preview-personagens.jpg)
+![Planetas](assets/preview-planetas.jpg)
 
 ---
 
@@ -31,8 +31,8 @@ Se você ama Star Wars tanto quanto eu, venha explorar o universo da saga comigo
 ## Estrutura
 Starwarsexplorer/
 ├── assets/
-│ ├── Star wars explorer.jpg
-│ └── planets.jpg
+│ ├── preview-personagens.jpg
+│ └── preview-planetas.jpg
 ├── backend/
 │ ├── data/
 │ │ ├── img/

@@ -2,9 +2,14 @@
 
 Se você ama Star Wars tanto quanto eu, venha explorar o universo da saga comigo. Os dados são fornecidos por uma API local desenvolvida em Node.js e consumidos no frontend com JavaScript puro, garantindo uma experiência leve e direta.
 
+## Preview
+
+![Personagens](assets/Star%20wars%20explorer.jpg)
+![Planetas](assets/planets.jpg)
+
 ---
 
-## Funcionalidades:
+## Funcionalidades
 
 - Navegação por categorias: Personagens, Planetas, Naves, Veículos, Espécies e Filmes
 - Busca em tempo real filtrando pelo nome dentro de cada categoria
@@ -15,7 +20,7 @@ Se você ama Star Wars tanto quanto eu, venha explorar o universo da saga comigo
 
 ---
 
-## Tecnologias que eu usei:
+## Tecnologias que eu usei
 
 - HTML, CSS e JavaScript puro no frontend
 - Node.js no backend servindo os arquivos JSON como API REST
@@ -23,9 +28,11 @@ Se você ama Star Wars tanto quanto eu, venha explorar o universo da saga comigo
 
 ---
 
-## Aqui você entende a estrutura:
-
+## Estrutura
 Starwarsexplorer/
+├── assets/
+│ ├── Star wars explorer.jpg
+│ └── planets.jpg
 ├── backend/
 │ ├── data/
 │ │ ├── img/
@@ -43,9 +50,11 @@ Starwarsexplorer/
 ├── script.js
 └── style.css
 
+text
+
 ---
 
-## Como rodar:
+## Como rodar
 
 Precisa ter o Node.js instalado.
 
@@ -65,7 +74,7 @@ node server.js
 
 Com o servidor rodando, abra o `frontend/index.html` no navegador. A API fica disponível em `http://localhost:3000/api`.
 
-### Rotas disponíveis:
+### Rotas disponíveis
 
 | Método | Rota               |
 |--------|--------------------|
@@ -80,5 +89,5 @@ Com o servidor rodando, abra o `frontend/index.html` no navegador. A API fica di
 
 ## Autora
 
-**Fernanda Duarte**
+**Fernanda Duarte**  
 [LinkedIn](https://www.linkedin.com/in/fernanda-amorim-duarte-8883903a7/)

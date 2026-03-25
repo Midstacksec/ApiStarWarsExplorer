@@ -29,28 +29,29 @@ Se você ama Star Wars tanto quanto eu, venha explorar o universo da saga comigo
 ---
 
 ## Estrutura
+
+```text
 Starwarsexplorer/
 ├── assets/
-│ ├── preview-personagens.jpg
-│ └── preview-planetas.jpg
+│   ├── preview-personagens.jpg
+│   └── preview-planetas.jpg
 ├── backend/
-│ ├── data/
-│ │ ├── img/
-│ │ ├── especies.json
-│ │ ├── filmes.json
-│ │ ├── naves.json
-│ │ ├── personagens.json
-│ │ ├── planetas.json
-│ │ └── veiculos.json
-│ ├── server.js
-│ ├── package.json
-│ └── package-lock.json
+│   ├── data/
+│   │   ├── img/
+│   │   ├── especies.json
+│   │   ├── filmes.json
+│   │   ├── naves.json
+│   │   ├── personagens.json
+│   │   ├── planetas.json
+│   │   └── veiculos.json
+│   ├── server.js
+│   ├── package.json
+│   └── package-lock.json
 └── frontend/
-├── index.html
-├── script.js
-└── style.css
-
-text
+    ├── index.html
+    ├── script.js
+    └── style.css
+```
 
 ---
 
@@ -59,16 +60,9 @@ text
 Precisa ter o Node.js instalado.
 
 ```bash
-# Clone o repositório
 git clone https://github.com/Midstacksec/ApiStarWarsExplorer.git
-
-# Entre na pasta do backend
 cd Starwarsexplorer/backend
-
-# Instale as dependências
 npm install
-
-# Inicie o servidor
 node server.js
 ```
 
